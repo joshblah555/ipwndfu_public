@@ -20,11 +20,7 @@ _main:
   LDP  X0, X1, [X0]
   ADR  X2, USB_DESCRIPTOR
   LDP  X3, X4, [X2]
-  STP  X3, X4, [X0]
-  STP  X3, X4, [X1]
   LDP  X3, X4, [X2,#0x10]
-  STP  X3, X4, [X0,#0x10]
-  STP  X3, X4, [X1,#0x10]
 
   LDR  X0, =gUSBSerialNumber
 find_zero_loop:
